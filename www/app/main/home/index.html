@@ -1,0 +1,39 @@
+<section class="mg-top-40">
+    <div class="page-header">
+        <h1> <i class="md md-camera"></i> Island</h1>
+        <p class="lead"> Create random islands and calculate</u>. </p>
+    </div>
+
+    <div class="col-lg-5">
+        <md-card>
+            <md-content layout-padding>
+                <form name="matrixForm">
+                    <md-input-container class="md-block">
+                        <label>Length of matrix</label>
+                        <input required type="number" step="any" name="rate" ng-model="vm.matrixLength" min="3" max="10" />
+                    </md-input-container>
+                    <md-button class="md-raised md-primary" type="submit" ng-click="vm.processIslands()">Generate Island</md-button>
+                </form>
+            </md-content>
+        </md-card>
+    </div>
+    <div class="col-lg-7">
+        <md-card>
+            <md-content layout-padding ng-if="vm.islandsGrid.length > 0">
+                <h5>Number of islands: {{vm.numberOfIslands}}</h5>
+                <md-table-container>
+                    <table class="table table-bordered">
+                        <tr ng-repeat="row in vm.islandsGrid track by $index">
+                            <td ng-repeat="col in row track by $index" ng-class="{'island': col===1}" style="width: 40px;">
+                                {{col}}
+                            </td>
+                        </tr>
+                    </table>
+                </md-table-container>
+            </md-content>
+            <md-content layout-padding ng-if="vm.islandsGrid.length===0">
+                <h5 class="grey-text darken-3">Please generate the proper islands.</h5>
+            </md-content>
+        </md-card>
+    </div>
+</section>

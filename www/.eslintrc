@@ -1,0 +1,10 @@
+{
+  "env": {
+    "browser": true,
+    "es6": false
+  },
+  "globals": {
+    "moment": true
+  },
+  "extends": ["angular"]
+}

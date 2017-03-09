@@ -1,0 +1,41 @@
+{
+  "name": "number-of-islands",
+  "version": "0.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "lint": "eslint . --debug",
+    "start": "gulp",
+    "build": "gulp build",
+    "prestart": "npm install && bower install --allow-root",
+    "prebuild": "npm install && bower install --allow-root",
+	"postinstall": "bower install && gulp build && gulp serve:prod"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dhianpratama/number-of-islands.git"
+  },
+  "dependencies": {
+    "express": "^4.14.0",
+    "gulp": "^3.9.1",
+	"bower": "^1.7.9",
+	"del": "^2.2.2",
+    "eslint": "^3.13.1",
+    "eslint-config-airbnb-base": "^11.0.1",
+    "eslint-config-angular": "^0.5.0",
+    "eslint-plugin-angular": "^1.6.1",
+    "eslint-plugin-import": "^2.2.0",
+    "gulp-clean-css": "^2.3.2",
+    "gulp-concat": "^2.6.1",
+    "gulp-eslint": "^3.0.1",
+    "gulp-inject": "^4.2.0",
+    "gulp-live-server": "0.0.30",
+    "gulp-ng-annotate": "^2.0.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^3.1.0",
+    "gulp-uglify": "^2.0.0",
+    "main-bower-files": "^2.13.1",
+    "run-sequence": "^1.2.2"
+  },
+  "license": "MIT"
+}

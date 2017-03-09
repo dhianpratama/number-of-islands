@@ -1,0 +1,38 @@
+<main>
+    <aside class="sidebar fixed">
+        <div class="brand-logo">
+            MavenLab
+        </div>
+        <div class="user-logged-in red darken-4">
+            <div class="content">
+                <div class="user-name">Dhian <span class="text-muted f9"></span></div>
+                <div class="user-email">muthidp@gmail.com</div>
+            </div>
+        </div>
+        <ul class="menu-links">
+            <li icon="md md-blur-on">
+                <a ui-sref="app.main.home">
+                    <span>ISLANDS</span></a>
+            </li>
+            <li icon="md md-blur-on">
+                <a ui-sref="app.main.readme">
+                    <span>README</span></a>
+            </li>
+        </ul>
+    </aside>
+
+    <div class="main-container">
+        <nav class="navbar navbar-default navbar-fixed-top red darken-4">
+            <div class="container-fluid">
+                <div class="navbar-header pull-left">
+                    <button type="button" class="navbar-toggle pull-left m-15" data-activates=".sidebar"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+                    <ul class="breadcrumb">
+                        <li><a>Maven Lab Number of Islands Test</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div ui-view="content" class="main-content" autoscroll="true" bs-affix-target="" init-ripples=""></div>
+
+    </div>
+</main>
