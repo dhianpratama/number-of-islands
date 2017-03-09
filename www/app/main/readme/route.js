@@ -3,7 +3,7 @@
 
   function route($stateProvider) {
     $stateProvider.state('app.main.readme', {
-      url: '/',
+      url: '/readme',
       views: {
         'content@app.main': {
           templateUrl: 'app/main/readme/index.html',
