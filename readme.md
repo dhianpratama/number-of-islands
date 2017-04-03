@@ -15,7 +15,7 @@ $ node app.js
 ```
 
 ### Development
-This MavenLab Test uses [Gulp](http://gulpjs.com) for fast developing.
+This app uses [Gulp](http://gulpjs.com) for fast developing.
 Make a change in your file and instantanously see your updates!
 This app also use [ESLint](http://eslint.org) with airbnb-base/legacy as a tool for identifying and reporting on patterns found in ECMAScript/JavaScript code.
 Make sure to obey the rules!
